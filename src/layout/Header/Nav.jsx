@@ -1,20 +1,27 @@
 import React from "react";
-import HireBtn from "../../components/Button/HireBtn";
+import DefBtn from "../../components/Button/DefBtn";
 import NavLink from "./NavLink";
+import { v4 as uuidv4 } from "uuid";
 
 const Nav = () => {
-  return (
-    <div className="bg-black-100 w-screen flex items-center justify-between px-6 py-5">
-      <div className="font-bold text-3xl text-white flex-1">kj</div>
+  const navbar = [
+    { tag: "Home", href: "#home" },
+    { tag: "About", href: "#about" },
+    { tag: "Projects", href: "#projects" },
+    { tag: "Contact", href: "#contact" },
+  ];
 
-      <div className="flex justify-between items-center flex-1">
-        <div className="flex gap-12">
-          <NavLink href="/" section="Home" isActive />
-          <NavLink href="#about" section="About" />
-          <NavLink href="#projects" section="Projects" />
-          <NavLink href="#contact" section="Contact" />
+  return (
+    <div className="bg-black-100 w-screen flex items-center justify-between gap-20 px-8 lg:pr-12 py-3 md:py-4 lg:py-5">
+      <div className="font-bold text-2xl lg:text-3xl text-white">kj</div>
+
+      <div className="flex justify-between items-center gap-20">
+        <div className="hidden md:flex md:gap-12 xl:gap-16">
+          {navbar.map((item) => {
+            return <NavLink key={uuidv4()} href={item.href} tag={item.tag} />;
+          })}
         </div>
-        <HireBtn isHeader />
+        <DefBtn isHeader />
       </div>
     </div>
   );
