@@ -39,9 +39,9 @@ const Contact = () => {
             Follow me on:
           </p>
           <div className="flex gap-5">
-            <img src={Github} alt="" />
-            <img src={LinkedIn} alt="" />
-            <img src={CodePen} alt="" />
+            <img src={Github} alt="kj github profile" />
+            <img src={LinkedIn} alt="kj linkedIn profile" />
+            <img src={CodePen} alt="kj codepen profile" />
           </div>
         </div>
       </div>
