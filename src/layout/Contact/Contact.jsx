@@ -39,9 +39,25 @@ const Contact = () => {
             Follow me on:
           </p>
           <div className="flex gap-5">
-            <img src={Github} alt="kj github profile" />
+            {[
+              [Github, "https://github.com/kawaljeet99/"],
+              [LinkedIn, "https://www.linkedin.com/in/kawaljeet-rathore/"],
+              [CodePen, ""],
+            ].map(([icon, link]) => {
+              return (
+                <a href={link} target="_blank" rel="noreferrer">
+                  <img src={icon} alt="kj github profile" />
+                </a>
+              );
+            })}
+            {/* <a
+              href="https://github.com/kawaljeet99/"
+              target="_blank"
+            >
+              <img src={Github} alt="kj github profile" />
+            </a>
             <img src={LinkedIn} alt="kj linkedIn profile" />
-            <img src={CodePen} alt="kj codepen profile" />
+            <img src={CodePen} alt="kj codepen profile" /> */}
           </div>
         </div>
       </div>
