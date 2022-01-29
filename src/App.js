@@ -11,6 +11,7 @@ function App() {
       <Hero />
       <Projects />
       <Contact />
+      <>Copyright text will come here</>
     </div>
   );
 }
