@@ -3,7 +3,6 @@ import ProjectIndex from "./ProjectIndex";
 import ProjectBtn from "./ProjectBtn";
 import Github from "../../assets/icons/Github.svg";
 import ExtLink from "../../assets/icons/ExtLink.svg";
-import CoffeeRoassters from "../../assets/icons/CoffeeRoasters.png";
 
 const ProjectSingle = (props) => {
   return (
@@ -26,7 +25,7 @@ const ProjectSingle = (props) => {
         </div>
 
         <div className="lg:w-7/12 rounded-2xl overflow-hidden border border-gray-400">
-          <img src={CoffeeRoassters} alt="" />
+          <img src={props.image} alt="" />
         </div>
       </div>
     </div>
