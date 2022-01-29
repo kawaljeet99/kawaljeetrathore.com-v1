@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 import SectionTitle from "../../components/Text/SectionTitle";
 import At from "../../assets/icons/At.svg";
 import Github from "../../assets/icons/Github.svg";
@@ -10,7 +11,7 @@ const Contact = () => {
     <div>
       <SectionTitle title="Contact me" />
 
-      <div className="w-10/12 min-w-[320px] m-auto sm:px-6 lg:px-8 py-10 border border-white/10 rounded-md bg-black-400 grid grid-cols-2 auto-rows-auto lg:grid-rows-2 gap-y-8 items-center">
+      <div className="w-10/12 min-w-[320px] m-auto my-10 md:my-14 xl:my-20 sm:px-6 lg:px-8 py-10 border border-white/10 rounded-md bg-black-400 grid grid-cols-2 auto-rows-auto lg:grid-rows-2 gap-y-8 items-center">
         <p className="text-lg md:text-xl lg:text-[1.375rem] sm:text-left col-span-full lg:row-start-1 lg:col-span-1">
           Let's get in touch!
         </p>
@@ -45,7 +46,7 @@ const Contact = () => {
               [CodePen, ""],
             ].map(([icon, link]) => {
               return (
-                <a href={link} target="_blank" rel="noreferrer">
+                <a href={link} target="_blank" rel="noreferrer" key={uuidv4()}>
                   <img src={icon} alt="kj github profile" />
                 </a>
               );
