@@ -8,7 +8,7 @@ import CodePen from "../../assets/icons/CodePen.svg";
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <SectionTitle title="Contact me" />
 
       <div className="w-10/12 min-w-[320px] m-auto my-10 md:my-14 xl:my-20 sm:px-6 lg:px-8 py-10 border border-white/10 rounded-md bg-black-400 grid grid-cols-2 auto-rows-auto lg:grid-rows-2 gap-y-8 items-center">
@@ -41,13 +41,17 @@ const Contact = () => {
           </p>
           <div className="flex gap-5">
             {[
-              [Github, "https://github.com/kawaljeet99/"],
-              [LinkedIn, "https://www.linkedin.com/in/kawaljeet-rathore/"],
-              [CodePen, ""],
-            ].map(([icon, link]) => {
+              [Github, "https://github.com/kawaljeet99/", "github"],
+              [
+                LinkedIn,
+                "https://www.linkedin.com/in/kawaljeet-rathore/",
+                "linkedIn",
+              ],
+              [CodePen, "", "codepen"],
+            ].map(([icon, link, tag]) => {
               return (
                 <a href={link} target="_blank" rel="noreferrer" key={uuidv4()}>
-                  <img src={icon} alt="kj github profile" />
+                  <img src={icon} alt={`kawaljeet's ${tag} profile`} />
                 </a>
               );
             })}
