@@ -21,12 +21,13 @@ const About = (props) => {
       <SectionTitle title="About me" />
 
       <div className="">
-        <div>
+        <div className="my-12 relative max-w-max">
           <img
             src={Kawaljeet}
             alt="Kawaljeet Rathore"
-            className="border-b border-white/70 max-h-[650px]"
+            className="border-b border-white/70 max-h-[650px] z-50"
           />
+          <div className="blue_drop_shadow absolute left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/4 h-5/6 w-11/12 md:w-96 bg-cyan-100/10 blur-[50px] rounded-[50%] -z-10"></div>
           {/* <img
             src={TestImg}
             alt="Kawaljeet Rathore"
@@ -40,28 +41,30 @@ const About = (props) => {
             Check out some of my work in the Projects section.
           </p>
 
-          <p>
+          <p className="my-8">
             I also like sharing content related to the stuff that I have learned
-            over the years in Web Development so it can help other people of the
-            Dev Community. Feel free to Connect or Follow me on my Linkedin
-            where I post useful content related to Web Development and
+            over the past few years in Web Development so it can help other
+            people of the Dev Community. Feel free to Connect or Follow me on
+            Linkedin, where I post useful content related to Web Development and
             Programming.
           </p>
 
           <p>
-            I'm open to Job opportunities where I can contribute, learn and
-            grow. If you have a good opportunity that matches my skills and
-            experience then don't hesitate to contact me.
+            I'm open to freelance opportunities where I can contribute, help &
+            grow your business. If you have a good opportunity that matches my
+            skills and experience then don't hesitate to contact me.
           </p>
         </div>
       </div>
 
-      <h3>Here are a few tools & technologies I’ve been working with:</h3>
+      <h3 className="my-8">
+        Here are few tools & technologies I’ve been working with:
+      </h3>
 
-      <div className="relative border-[0.75px] border-gray-300 rounded-md bg-black-400 grid grid-cols-3 grid-rows-3 gap-8 p-8 max-w-max mx-auto sm:grid-cols-5 sm:grid-rows-2 overflow-hidden">
+      <div className="relative border-[0.75px] border-gray-300 rounded-md bg-black-400 grid grid-cols-3 grid-rows-3 gap-9 p-9 max-w-max mx-auto sm:grid-cols-5 sm:grid-rows-2 overflow-hidden mb-20">
         {[HTML5, CSS3, JS, Sass, ReactIcon, Tailwind, Git, Github, Figma].map(
           (icon) => {
-            return <img className="h-10 w-10" src={icon} alt="" />;
+            return <img className="h-11 w-11" src={icon} alt="" />;
           }
         )}
         <div className="blue_drop_shadow absolute left-0 top-1/2 -translate-y-1/2 h-72 w-72 bg-cyan-100/10 blur-[50px] rounded-[50%]"></div>
