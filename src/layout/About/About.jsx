@@ -20,12 +20,12 @@ const About = (props) => {
     >
       <SectionTitle title="About me" />
 
-      <div className="">
-        <div className="my-12 relative max-w-max">
+      <div className="lg:flex items-center gap-10 lg:my-16">
+        <div className="my-12 md:my-0 relative max-w-max lg:w-2/5 lg:border lg:border-white/70 rounded-2xl">
           <img
             src={Kawaljeet}
             alt="Kawaljeet Rathore"
-            className="border-b border-white/70 max-h-[650px] z-50"
+            className="border-b border-white/70 lg:border-none max-h-[650px] z-50"
           />
           <div className="blue_drop_shadow absolute left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/4 h-5/6 w-11/12 md:w-96 bg-cyan-100/10 blur-[50px] rounded-[50%] -z-10"></div>
           {/* <img
@@ -34,14 +34,14 @@ const About = (props) => {
             className="border-b border-white/70"
           /> */}
         </div>
-        <div className="md:text-lg text-gray-200">
+        <div className="md:text-lg text-gray-200 lg:w-3/5">
           <p>
             I'm a Frontend Web Developer building the Front-end of Websites and
             Web Applications that leads to the success of the overall product.
             Check out some of my work in the Projects section.
           </p>
 
-          <p className="my-8">
+          <p className="my-8 lg:my-3">
             I also like sharing content related to the stuff that I have learned
             over the past few years in Web Development so it can help other
             people of the Dev Community. Feel free to Connect or Follow me on
@@ -57,7 +57,7 @@ const About = (props) => {
         </div>
       </div>
 
-      <h3 className="my-8">
+      <h3 className="my-8 mx-auto max-w-fit">
         Here are few tools & technologies I’ve been working with:
       </h3>
 
