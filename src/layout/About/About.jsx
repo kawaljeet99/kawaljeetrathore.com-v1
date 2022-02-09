@@ -21,7 +21,7 @@ const About = (props) => {
       <SectionTitle title="About me" />
 
       <div className="lg:flex items-center gap-10 lg:my-16">
-        <div className="my-12 md:my-0 relative max-w-max lg:w-2/5 lg:border lg:border-white/70 rounded-2xl">
+        <div className="my-12 lg:my-0 relative max-w-max mx-auto lg:w-2/5 lg:border lg:border-white/70 rounded-2xl">
           <img
             src={Kawaljeet}
             alt="Kawaljeet Rathore"
