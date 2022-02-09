@@ -5,7 +5,7 @@ import DefBtn from "../../components/Button/DefBtn";
 
 const Hero = () => {
   return (
-    <div className="py-20 w-10/12 m-auto">
+    <div id="home" className="py-20 w-10/12 m-auto">
       <Subtitle />
 
       <div className="my-14 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4.375rem]">

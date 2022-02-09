@@ -12,10 +12,7 @@ const Nav = () => {
   ];
 
   return (
-    <div
-      id="home"
-      className="bg-black-100/75 w-screen flex items-center justify-between gap-20 px-8 lg:pr-12 py-3 md:py-4 lg:py-5 sticky top-0 left-0 right-0 backdrop-blur-lg z-50"
-    >
+    <div className="bg-black-100/75 w-screen flex items-center justify-between gap-20 px-8 lg:pr-12 py-3 md:py-4 lg:py-5 sticky top-0 left-0 right-0 backdrop-blur-lg z-50">
       <div className="font-bold text-2xl lg:text-3xl text-white">kj</div>
 
       <div className="flex justify-between items-center gap-20">
