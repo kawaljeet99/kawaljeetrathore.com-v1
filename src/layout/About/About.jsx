@@ -1,7 +1,6 @@
 import React from "react";
 import SectionTitle from "../../components/Text/SectionTitle";
-import Kawaljeet from "../../assets/images/Kawaljeet.png";
-// import TestImg from "../../assets/images/TestImg.png";
+import Kawaljeet from "../../assets/images/Kawaljeet.webp";
 import HTML5 from "../../assets/icons/HTML5.svg";
 import CSS3 from "../../assets/icons/CSS3.svg";
 import JS from "../../assets/icons/JS.svg";

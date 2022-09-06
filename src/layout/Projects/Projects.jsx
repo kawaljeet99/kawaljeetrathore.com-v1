@@ -1,9 +1,9 @@
 import React from "react";
 import SectionTitle from "../../components/Text/SectionTitle";
 import ProjectSingle from "./ProjectSingle";
-import CoffeeRoassters from "../../assets/images/CoffeeRoasters.png";
-import Spacer from "../../assets/images/Spacer.png";
-import Audiophile from "../../assets/images/Audiophile.png";
+import CoffeeRoassters from "../../assets/images/CoffeeRoasters.jpg";
+import Spacer from "../../assets/images/Spacer.jpg";
+import Audiophile from "../../assets/images/Audiophile.jpg";
 
 const Projects = (props) => {
   return (
