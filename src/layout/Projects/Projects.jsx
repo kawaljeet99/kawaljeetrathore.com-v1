@@ -31,7 +31,7 @@ const Projects = (props) => {
         desc="A nice website for coffee lovers ment so it can help other people of the Dev Community Feel free to Connect or Follow me on my Linkedin"
         image={Audiophile}
         repo=""
-        live=""
+        live="https://audiophile-shop.netlify.app/"
       />
     </div>
   );
